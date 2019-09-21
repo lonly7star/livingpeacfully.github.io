@@ -2,11 +2,31 @@
 layout: default
 ---
 
+<!DOCTYPE html>
 <html>
-
 <head>
-  <title>Living Peacefully</title>
-  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>{{ page.title }}</title>
+  <LINK href="styles.css" rel="stylesheet" type="text/css">
 </head>
+
+<body>
+
+<img src="website-security-software.png" alt="Everyday security" style="width: 500px; height: 100px" class="center" />
+
+<! include usage>
+{% include navigation.html %}
+
+<!-- The first introduction to our future project -->
+<p>Hello World! We are EverdaySecurity, this is our first website.</p>
+
+<!-- add a ratio buttom for futher function -->
+<p>Please select your age group from below: </p>
+<form>
+  <input type="radio" name="age" value="Child" checked> Child (1-12)<br>
+  <input type="radio" name="age" value="Teenager"> Teenager (12-18)<br>
+  <input type="radio" name="age" value="Adult"> Adult (>18)<br>
+</form>
+
 </body>
 </html>
